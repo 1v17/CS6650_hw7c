@@ -1,3 +1,7 @@
+# set output to english
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 .PHONY: configure
 configure:
 	# Initialize Terraform workspaces
