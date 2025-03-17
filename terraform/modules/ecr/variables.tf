@@ -7,7 +7,7 @@ variable "additional_tags" {
 variable "ecr_repository_name" {
   description = "Name of the ECR repository"
   type        = string
-  default     = "hummingbird-media-ecr-repository-1"
+  default     = "hummingbird-media-ecr-repository"
 }
 
 variable "application_environment" {
