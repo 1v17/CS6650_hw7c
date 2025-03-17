@@ -12,8 +12,9 @@ services:
       - LOCALSTACK_AUTH_TOKEN=${LOCALSTACK_AUTH_TOKEN:?}
       - LOCALSTACK_DEBUG=${LOCALSTACK_DEBUG:-0}
       - LOCALSTACK_PERSISTENCE=${LOCALSTACK_PERSISTENCE:-0}
-      - LS_LOG=${LS_LOG:-error}
+      - LS_LOG=debug
       - GATEWAY_LISTEN=:4566,:80,:443
+      - ECR_ENDPOINT_STRATEGY=off
     volumes:
       - '${LOCALSTACK_VOLUME_DIR:-./volume}:/var/lib/localstack'
       - '/var/run/docker.sock:/var/run/docker.sock'
